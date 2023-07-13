@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* DEFAULT COLORS */
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+} 
+
+body {
+    font-family: 'Manrope', sans-serif;
+    width: 100%;
+    /* max-width: 90%; */
+    padding-inline: 1rem;
+    background-color: var(--Dark-Blue);
+}
+
+/* =============== MAIN ================ */
+.card {
+    background-color: var(--Dark-Grayish-Blue);
+    margin: 200px auto; 
+    padding: 60px;
+    max-width: 35%;  
+    border-radius: 27px;                                                                                                                         
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 4px 4px 10px var(--Dark-Grayish-Blue);
+    transition: all .4s ease-in-out;
+}
+
+
+.advice-counter {
+    color: var(--Neon-Green);
+    letter-spacing: 3px;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.advice-text {
+    color: var(--Light-Cyan);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icons {
+    position: relative;
+    /* width: 100%; */
+}
+
+.p-icon {
+   color: var(--Dark-Grayish-Blue);
+   margin-bottom: 13px;
+   width: 350px;
+}
+
+.icons button {
+    position: absolute;
+    top: 190%;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--Neon-Green);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    outline: none;
+    border: none;
+}
+
+.icons button:hover {
+    transform: scale(1.1);
+    color: var(--Neon-Green);
+   box-shadow: 0 2px 30px var(--Neon-Green);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .card {
+        max-width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .p-icon {
+        width: 230px;
+    }
+
+    .icons button {
+        left: 37%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+  .card {
+    max-width: 100%;
+  }
+}
