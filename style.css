@@ -19,6 +19,7 @@ body {
     /* max-width: 90%; */
     padding-inline: 1rem;
     background-color: var(--Dark-Blue);
+    overflow: none;
 }
 
 /* =============== MAIN ================ */
@@ -97,10 +98,19 @@ body {
     .card {
         max-width: 50%;
     }
+    .p-icon {
+        width: 210px;
+    }
 }
 
 
 @media screen and (max-width: 700px) {
+
+    .card {
+        max-width: 70%;
+        max-height: 150vh;
+
+    }
     .p-icon {
         width: 230px;
     }
