@@ -103,6 +103,7 @@ body {
 @media screen and (max-width: 700px) {
     .p-icon {
         width: 230px;
+        max-height: 400px;
     }
 
     .icons button {
